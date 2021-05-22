@@ -44,7 +44,7 @@ class GoogleAuth extends React.Component {
        // identify check function for the signed in case with redux actions creators  
        onAuthChange = isSignedIn => {
            if ( isSignedIn ){
-                this.props.signIn(); 
+                this.props.signIn(this.auth.currentUser.get().getId()); 
            } else {
                this.props.signOut();
            }
