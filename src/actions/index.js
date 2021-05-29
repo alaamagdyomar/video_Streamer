@@ -8,7 +8,6 @@ import {
     EDIT_STREAM
      } 
      from '../actions/types';
-
 import streams from '../apis/streams';
 
 export const signIn = (userId) => {
