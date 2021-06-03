@@ -10,17 +10,16 @@ import history from '../../history';
             this.props.fetchStream(this.props.match.params.id);
       }
 
+      // the two buttons  [ Delete & cancel ]
     renderActions(){
-
-      const { id } = this.props.match.params;
-      
+      const { id } = this.props.match.params;      
       return  (
           <React.Fragment>
             <button 
             onClick={()=> this.props.deleteStream(id)}
             className="ui button negative">
               Delete
-              </button>
+            </button>
             <Link
               to="/" 
               className="ui button">
@@ -29,10 +28,13 @@ import history from '../../history';
           </React.Fragment>
         );
       }
+
+      // render the portal modal content with the delete helper method 
     renderContent(){
       if(!this.props.stream){
-        return  'loading...!'
-      } return  `r u sure u want to delete ${this.props.stream.title}`
+        return  'loading...!';
+      } 
+      return  `r u sure u want to delete => ${this.props.stream.title}`;
     }
 
     render(){
