@@ -3,16 +3,19 @@
     {
       "title": "meeting 1",
       "description": "Description for meeting number 1",
+      "userId": "115114588766240461080",
       "id": 1
     },
     {
       "title": "meeting 2",
       "description": "Description for meeting number 2",
+      "userId": "115114588766240461080",
       "id": 2
     },
     {
       "title": "meeting 3",
       "description": "Description for meeting number 3",
+      "userId": "115114588766240461080",
       "id": 5
     },
     {
